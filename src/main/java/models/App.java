@@ -51,8 +51,189 @@ public class App {
                 return "{\"message\":\"I'm sorry, but no departments are currently listed in the database.\"}";
             }
 
+        });post("/departments/new", "application/json", (req, res) -> { //accept a request in format JSON
+            Departmentpost("/departments/new", "application/json", (req, res) -> { //accept a request in format JSON
+                Department  dept = gson.fromJson(req.body(), Department.class);//make with GSON
+                if(dept.getName().equals("")  || dept.getDescription().equals("")){
+                    throw new ApiException(404, "Please fill in the required fields");
+                }else if(deptDao.allDepts().contains(dept)){
+                    throw new ApiException(404, "The department provided already exists");
+                }else if(dept == null) {
+                    throw new ApiException(404, "Please fill in the required fields");
+                }
+                else {
+                    deptDao.addDept(dept);//Do our thing with our DAO
+                    res.status(201);//everything went well - update the response status code
+                    return gson.toJson(dept);//send it back to be displayed
+                }
+            });post("/departments/new", "application/json", (req, res) -> { //accept a request in format JSON
+                Department  dept = gson.fromJson(req.body(), Department.class);//make with GSON
+                if(dept.getName().equals("")  || dept.getDescription().equals("")){
+                    throw new ApiException(404, "Please fill in the required fields");
+                }else if(deptDao.allDepts().contains(dept)){
+                    throw new ApiException(404, "The department provided already exists");
+                }else if(dept == null) {
+                    throw new ApiException(404, "Please fill in the required fields");
+                }
+                else {
+                    deptDao.addDept(dept);//Do our thing with our DAO
+                    res.status(201);//everything went well - update the response status code
+                    return gson.toJson(dept);//send it back to be displayed
+                }
+            });post("/departments/new", "application/json", (req, res) -> { //accept a request in format JSON
+                Department  dept = gson.fromJson(req.body(), Department.class);//make with GSON
+                if(dept.getName().equals("")  || dept.getDescription().equals("")){
+                    throw new ApiException(404, "Please fill in the required fields");
+                }else if(deptDao.allDepts().contains(dept)){
+                    throw new ApiException(404, "The department provided already exists");
+                }else if(dept == null) {
+                    throw new ApiException(404, "Please fill in the required fields");
+                }
+                else {
+                    deptDao.addDept(dept);//Do our thing with our DAO
+                    res.status(201);//everything went well - update the response status code
+                    return gson.toJson(dept);//send it back to be displayed
+                }
+            });post("/departments/new", "application/json", (req, res) -> { //accept a request in format JSON
+                Department  dept = gson.fromJson(req.body(), Department.class);//make with GSON
+                if(dept.getName().equals("")  || dept.getDescription().equals("")){
+                    throw new ApiException(404, "Please fill in the required fields");
+                }else if(deptDao.allDepts().contains(dept)){
+                    throw new ApiException(404, "The department provided already exists");
+                }else if(dept == null) {
+                    throw new ApiException(404, "Please fill in the required fields");
+                }
+                else {
+                    deptDao.addDept(dept);//Do our thing with our DAO
+                    res.status(201);//everything went well - update the response status code
+                    return gson.toJson(dept);//send it back to be displayed
+                }
+            });post("/departments/new", "application/json", (req, res) -> { //accept a request in format JSON
+                Department  dept = gson.fromJson(req.body(), Department.class);//make with GSON
+                if(dept.getName().equals("")  || dept.getDescription().equals("")){
+                    throw new ApiException(404, "Please fill in the required fields");
+                }else if(deptDao.allDepts().contains(dept)){
+                    throw new ApiException(404, "The department provided already exists");
+                }else if(dept == null) {
+                    throw new ApiException(404, "Please fill in the required fields");
+                }
+                else {
+                    deptDao.addDept(dept);//Do our thing with our DAO
+                    res.status(201);//everything went well - update the response status code
+                    return gson.toJson(dept);//send it back to be displayed
+                }
+            });post("/departments/new", "application/json", (req, res) -> { //accept a request in format JSON
+                Department  dept = gson.fromJson(req.body(), Department.class);//make with GSON
+                if(dept.getName().equals("")  || dept.getDescription().equals("")){
+                    throw new ApiException(404, "Please fill in the required fields");
+                }else if(deptDao.allDepts().contains(dept)){
+                    throw new ApiException(404, "The department provided already exists");
+                }else if(dept == null) {
+                    throw new ApiException(404, "Please fill in the required fields");
+                }
+                else {
+                    deptDao.addDept(dept);//Do our thing with our DAO
+                    res.status(201);//everything went well - update the response status code
+                    return gson.toJson(dept);//send it back to be displayed
+                }
+            });post("/departments/new", "application/json", (req, res) -> { //accept a request in format JSON
+                Department  dept = gson.fromJson(req.body(), Department.class);//make with GSON
+                if(dept.getName().equals("")  || dept.getDescription().equals("")){
+                    throw new ApiException(404, "Please fill in the required fields");
+                }else if(deptDao.allDepts().contains(dept)){
+                    throw new ApiException(404, "The department provided already exists");
+                }else if(dept == null) {
+                    throw new ApiException(404, "Please fill in the required fields");
+                }
+                else {
+                    deptDao.addDept(dept);//Do our thing with our DAO
+                    res.status(201);//everything went well - update the response status code
+                    return gson.toJson(dept);//send it back to be displayed
+                }
+            });post("/departments/new", "application/json", (req, res) -> { //accept a request in format JSON
+                Department  dept = gson.fromJson(req.body(), Department.class);//make with GSON
+                if(dept.getName().equals("")  || dept.getDescription().equals("")){
+                    throw new ApiException(404, "Please fill in the required fields");
+                }else if(deptDao.allDepts().contains(dept)){
+                    throw new ApiException(404, "The department provided already exists");
+                }else if(dept == null) {
+                    throw new ApiException(404, "Please fill in the required fields");
+                }
+                else {
+                    deptDao.addDept(dept);//Do our thing with our DAO
+                    res.status(201);//everything went well - update the response status code
+                    return gson.toJson(dept);//send it back to be displayed
+                }
+            });post("/departments/new", "application/json", (req, res) -> { //accept a request in format JSON
+                Department  dept = gson.fromJson(req.body(), Department.class);//make with GSON
+                if(dept.getName().equals("")  || dept.getDescription().equals("")){
+                    throw new ApiException(404, "Please fill in the required fields");
+                }else if(deptDao.allDepts().contains(dept)){
+                    throw new ApiException(404, "The department provided already exists");
+                }else if(dept == null) {
+                    throw new ApiException(404, "Please fill in the required fields");
+                }
+                else {
+                    deptDao.addDept(dept);//Do our thing with our DAO
+                    res.status(201);//everything went well - update the response status code
+                    return gson.toJson(dept);//send it back to be displayed
+                }
+            });post("/departments/new", "application/json", (req, res) -> { //accept a request in format JSON
+                Department  dept = gson.fromJson(req.body(), Department.class);//make with GSON
+                if(dept.getName().equals("")  || dept.getDescription().equals("")){
+                    throw new ApiException(404, "Please fill in the required fields");
+                }else if(deptDao.allDepts().contains(dept)){
+                    throw new ApiException(404, "The department provided already exists");
+                }else if(dept == null) {
+                    throw new ApiException(404, "Please fill in the required fields");
+                }
+                else {
+                    deptDao.addDept(dept);//Do our thing with our DAO
+                    res.status(201);//everything went well - update the response status code
+                    return gson.toJson(dept);//send it back to be displayed
+                }
+            });post("/departments/new", "application/json", (req, res) -> { //accept a request in format JSON
+                Department  dept = gson.fromJson(req.body(), Department.class);//make with GSON
+                if(dept.getName().equals("")  || dept.getDescription().equals("")){
+                    throw new ApiException(404, "Please fill in the required fields");
+                }else if(deptDao.allDepts().contains(dept)){
+                    throw new ApiException(404, "The department provided already exists");
+                }else if(dept == null) {
+                    throw new ApiException(404, "Please fill in the required fields");
+                }
+                else {
+                    deptDao.addDept(dept);//Do our thing with our DAO
+                    res.status(201);//everything went well - update the response status code
+                    return gson.toJson(dept);//send it back to be displayed
+                }
+            });post("/departments/new", "application/json", (req, res) -> { //accept a request in format JSON
+                Department  dept = gson.fromJson(req.body(), Department.class);//make with GSON
+                if(dept.getName().equals("")  || dept.getDescription().equals("")){
+                    throw new ApiException(404, "Please fill in the required fields");
+                }else if(deptDao.allDepts().contains(dept)){
+                    throw new ApiException(404, "The department provided already exists");
+                }else if(dept == null) {
+                    throw new ApiException(404, "Please fill in the required fields");
+                }
+                else {
+                    deptDao.addDept(dept);//Do our thing with our DAO
+                    res.status(201);//everything went well - update the response status code
+                    return gson.toJson(dept);//send it back to be displayed
+                }
+            });  dept = gson.fromJson(req.body(), Department.class);//make with GSON
+            if(dept.getName().equals("")  || dept.getDescription().equals("")){
+                throw new ApiException(404, "Please fill in the required fields");
+            }else if(deptDao.allDepts().contains(dept)){
+                throw new ApiException(404, "The department provided already exists");
+            }else if(dept == null) {
+                throw new ApiException(404, "Please fill in the required fields");
+            }
+            else {
+                deptDao.addDept(dept);//Do our thing with our DAO
+                res.status(201);//everything went well - update the response status code
+                return gson.toJson(dept);//send it back to be displayed
+            }
         });
-
         //CREATE
         post("/departments/:departmentId/news/:newsId", "application/json", (req, res) -> {
 
